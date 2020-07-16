@@ -1,0 +1,13 @@
+version: "3.6"
+
+services:
+  queue:
+    image: evaldobarbosa/larajob
+    # build: .
+    container_name: "cron"
+    environment:
+      - PHP_MEMORY_LIMIT=256M
+      - LANG=pt_BR.UTF-8
+      - TZ=America/Fortaleza
+    # volumes:
+    #  - ./webapp:/var/www/app
